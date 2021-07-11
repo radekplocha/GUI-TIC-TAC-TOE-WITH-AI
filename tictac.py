@@ -135,11 +135,6 @@ class TicTacToe:
         self.print_lines()
         self.canvas.bind("<Button-1>", self.player_move)
 
-    def change_turn(self):
-        if self.turn == 'X':
-            self.turn = 'O'
-        else:
-            self.turn = 'X'
 
     def evaluate(self):
         if self.areas[0][5] == self.areas[1][5] == self.areas[2][5] and self.areas[0][5] is not None:
